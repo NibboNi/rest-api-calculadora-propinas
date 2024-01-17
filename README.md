@@ -1,3 +1,3 @@
 # REST API Calculadora de Propinas
 
-Proyecto para poner en practica mis habilidades de JS y creacion y manejo de APIs.
+[![My Skills](https://skillicons.dev/icons?i=js,nodejs)](https://skillicons.dev)
