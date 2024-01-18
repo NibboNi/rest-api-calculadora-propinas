@@ -29,6 +29,76 @@ p {
   background-color: #131313;
 }
 
+.menu {
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dishes {
+  padding: 2rem;
+  width: 100%;
+  max-width: 576px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: .5rem;
+  box-shadow: 1px 1px 10px -1px rgb(0 0 0 / 0.4);
+}
+
+.dish {
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 1px solid rgb(0 0 0 / 0.2);
+}
+
+.name {
+  font-size: 2.4rem;
+}
+
+.category {
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 5rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+  gap: 1rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.price {
+  padding-top: .5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.qty-input {
+  margin: 0 0 0 auto;
+  padding: 1rem 2rem;
+  width: 12rem;
+  border: none;
+  border-radius: 5rem;
+  outline: none;
+  box-shadow: 1px 1px 10px -1px rgb(0 0 0 / 0.4);
+}
+
 .modal {
   height: 100%;
   width: 100%;
@@ -140,6 +210,18 @@ p {
 
 .hide {
   display: none;
+}
+
+.comida {
+  background-color: tomato;
+}
+
+.bebida {
+  background-color: royalblue;
+}
+
+.postre {
+  background-color: orchid;
 }
 
 @media (min-width: 768px) {
