@@ -1,5 +1,5 @@
 const dishes = document.querySelector("#dishes");
-const dishesList = document.querySelector("#dishes-list");
+const menu = document.querySelector("#menu");
 const categories = {
   1: "comida",
   2: "bebida",
@@ -7,6 +7,12 @@ const categories = {
 };
 
 const fillDishesList = (dishes) => {
+  if (document.querySelector("#dishes-list")) return;
+
+  const dishesList = document.createElement("div");
+  dishesList.setAttribute("id", "dishes-list");
+  dishesList.classList.add("dishes");
+
   dishes.forEach((dish) => {
     const dishEl = document.createElement("div");
     const dishInfo = document.createElement("div");
@@ -47,6 +53,8 @@ const fillDishesList = (dishes) => {
 
     dishesList.appendChild(dishEl);
   });
+
+  menu.appendChild(dishesList);
 };
 
 const getDishes = async () => {
